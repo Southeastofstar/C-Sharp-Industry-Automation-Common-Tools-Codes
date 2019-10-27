@@ -1,0 +1,13 @@
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\bin\Debug\SimpleTCPIPClientStation.XML
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\bin\Debug\SimpleTCPIPClientStation.exe
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\bin\Debug\SimpleTCPIPClientStation.pdb
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\bin\Debug\TCPClientStation.dll
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\bin\Debug\TCPClientStation.pdb
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\bin\Debug\TCPClientStation.xml
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\obj\x86\Debug\SimpleTCPIPClientStation.Form1.resources
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\obj\x86\Debug\SimpleTCPIPClientStation.Properties.Resources.resources
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\obj\x86\Debug\SimpleTCPIPClientStation.csproj.GenerateResource.Cache
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\obj\x86\Debug\SimpleTCPIPClientStation.exe
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\obj\x86\Debug\SimpleTCPIPClientStation.pdb
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\obj\x86\Debug\SimpleTCPIPClientStation.csprojResolveAssemblyReference.cache
+E:\编程学习\VS2010\vs2010-C#\SimpleTCPIPClientStation\SimpleTCPIPClientStation\obj\x86\Debug\MyTools.Properties.Resources.resources

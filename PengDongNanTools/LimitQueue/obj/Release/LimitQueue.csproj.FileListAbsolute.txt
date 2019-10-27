@@ -1,0 +1,10 @@
+F:\Project Data\VS2012 Projects\LimitQueue\LimitQueue\bin\Release\LimitQueue.dll
+F:\Project Data\VS2012 Projects\LimitQueue\LimitQueue\bin\Release\LimitQueue.pdb
+F:\Project Data\VS2012 Projects\LimitQueue\LimitQueue\obj\Release\LimitQueue.dll
+F:\Project Data\VS2012 Projects\LimitQueue\LimitQueue\obj\Release\LimitQueue.pdb
+F:\Project Data\VS2012 Projects\A-自用\LimitQueue\LimitQueue\bin\Release\LimitQueue.dll
+F:\Project Data\VS2012 Projects\A-自用\LimitQueue\LimitQueue\bin\Release\LimitQueue.pdb
+F:\Project Data\VS2012 Projects\A-自用\LimitQueue\LimitQueue\obj\Release\LimitQueue.dll
+F:\Project Data\VS2012 Projects\A-自用\LimitQueue\LimitQueue\obj\Release\LimitQueue.pdb
+F:\Project Data\VS2012 Projects\A-自用\LimitQueue\LimitQueue\bin\Release\LimitQueue.XML
+F:\Project Data\VS2012 Projects\A-自用\LimitQueue\LimitQueue\obj\Release\LimitQueue.csprojResolveAssemblyReference.cache

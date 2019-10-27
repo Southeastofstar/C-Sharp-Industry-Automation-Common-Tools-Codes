@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LimitQueue</name>
+    </assembly>
+    <members>
+        <member name="T:LimitQueue.LimitQueue`1">
+            <summary>
+            有限长度队列类【FIFO - 先进先出】：在初始化时指定队列长度，后续插入数据时，超过此长度的最旧的一条数据会被丢弃
+            </summary>
+            <typeparam name="Type"></typeparam>
+        </member>
+        <member name="M:LimitQueue.LimitQueue`1.#ctor(System.Int32)">
+            <summary>
+            有限长度队列类的构造函数
+            </summary>
+            <param name="LimitCount">指定队列的长度，后续插入数据时，超过此长度的最旧的一条数据会被丢弃</param>
+        </member>
+        <member name="M:LimitQueue.LimitQueue`1.Enqueue(`0)">
+            <summary>
+            将对象添加到 System.Collections.Generic.Queue 的结尾处。
+            </summary>
+            <param name="item">要添加到 System.Collections.Generic.Queue 的对象。对于引用类型，该值可以为 null。</param>
+        </member>
+        <member name="M:LimitQueue.LimitQueue`1.Dequeue">
+            <summary>
+            重载 System.Collections.Generic.Queue 的 public T Dequeue()：返回最早送入队列的值(T类型)，在执行Dequeue () 前要判断属性 Count 不为0，否则会抛出异常
+            </summary>
+            <returns>返回最早送入队列的值(T类型)</returns>
+        </member>
+        <member name="P:LimitQueue.LimitQueue`1.Elements">
+            <summary>
+            获取队列中 System.Collections.Generic.Queue 元素的数组，可以对每个元素进行索引
+            </summary>
+        </member>
+    </members>
+</doc>

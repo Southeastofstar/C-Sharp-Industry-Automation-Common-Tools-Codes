@@ -1,0 +1,5 @@
+F:\Project Data\VS2012 Projects\LimitStack\LimitStack\bin\Debug\LimitStack.XML
+F:\Project Data\VS2012 Projects\LimitStack\LimitStack\bin\Debug\LimitStack.dll
+F:\Project Data\VS2012 Projects\LimitStack\LimitStack\bin\Debug\LimitStack.pdb
+F:\Project Data\VS2012 Projects\LimitStack\LimitStack\obj\Debug\LimitStack.dll
+F:\Project Data\VS2012 Projects\LimitStack\LimitStack\obj\Debug\LimitStack.pdb

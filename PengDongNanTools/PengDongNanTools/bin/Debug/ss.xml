@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="gb2312"?>
+<root>
+  <ccdPara>
+    <para>
+      <id>0</id>
+      <p>0</p>
+      <dataPart>60</dataPart>
+      <TestPara>
+        <index>0</index>
+        <testName>FAI 4</testName>
+        <normal>002.390</normal>
+        <min>0.030</min>
+        <max>0.050</max>
+        <pixV>0.000</pixV>
+        <Bc>000.000</Bc>
+      </TestPara>
+    </para>
+  </ccdPara>
+  <one>
+    <id>1087</id>
+    <flag>NG</flag>
+    <machineId>MachineID:001</machineId>
+    <mould />
+    <Date>2016/12/15 21:47:34</Date>
+    <str>+0000000.0,+0000000.00</str>
+  </one>
+  <iooooooo />
+  <iooooooo xmlns="0000" />
+  <iooooooo:555 xmlns:iooooooo="0000" />
+</root>

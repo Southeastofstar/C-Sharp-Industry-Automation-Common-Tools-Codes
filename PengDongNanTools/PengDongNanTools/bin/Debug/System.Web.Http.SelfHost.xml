@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>System.Web.Http.SelfHost</name>
+  </assembly>
+  <members>
+    <member name="T:System.Net.Http.HttpRequestMessageExtensions">
+      <summary>提供 <see cref="T:System.Net.Http.HttpRequestMessage" /> 的扩展方法。</summary>
+    </member>
+    <member name="M:System.Net.Http.HttpRequestMessageExtensions.GetSecurityMessageProperty(System.Net.Http.HttpRequestMessage)">
+      <summary>获取给定请求的请求消息属性中存储的当前 <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" />。</summary>
+      <returns>当前 <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" />。</returns>
+      <param name="request">请求。</param>
+    </member>
+    <member name="T:System.Web.Http.SelfHost.HttpSelfHostConfiguration">
+      <summary>包含 HTTP 服务的配置类。</summary>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.HttpSelfHostConfiguration.#ctor(System.String)">
+      <summary>初始化 <see cref="T:System.Web.Http.SelfHost.HttpSelfHostConfiguration" /> 类的新实例。</summary>
+      <param name="baseAddress">字符串形式的基址。</param>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.HttpSelfHostConfiguration.#ctor(System.Uri)">
+      <summary>初始化 <see cref="T:System.Web.Http.SelfHost.HttpSelfHostConfiguration" /> 类的新实例。</summary>
+      <param name="baseAddress">URI 形式的基址。</param>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.BaseAddress">
+      <summary>获取基本 HTTP 地址。</summary>
+      <returns>表示基本 HTTP 地址的 <see cref="T:System.Uri" /> 对象。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.ClientCredentialType">
+      <summary>获取或设置服务器所需的客户端凭据类型。</summary>
+      <returns>
+        <see cref="T:System.ServiceModel.HttpClientCredentialType" /> 值，用于指定凭据类型。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.HostNameComparisonMode">
+      <summary>获取一个值，该值指定调度传入的消息时应在 URI 比较中使用主机名的方式。</summary>
+      <returns>
+        <see cref="T:System.ServiceModel.HostNameComparisonMode" /> 枚举的值之一。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.MaxBufferSize">
+      <summary>获取或设置缓冲区的最大大小。</summary>
+      <returns>缓冲区的最大大小。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.MaxConcurrentRequests">
+      <summary>获取或设置可以在任何给定时间处理的并发 <see cref="T:System.Net.Http.HttpRequestMessage" /> 实例数的上限。默认值是 100 乘以 CPU 内核数。</summary>
+      <returns>可以在任何给定时间处理的并发 <see cref="T:System.Net.Http.HttpRequestMessage" /> 实例数的上限。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.MaxReceivedMessageSize">
+      <summary>获取或设置所接收消息的最大大小。</summary>
+      <returns>所接收消息的最大大小。</returns>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.HttpSelfHostConfiguration.OnConfigureBinding(System.Web.Http.SelfHost.Channels.HttpBinding)">
+      <summary>为在终结点级别应用配置而调用。</summary>
+      <returns>生成 <see cref="T:System.ServiceModel.Channels.IChannelListener" /> 时要使用的 <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> 或 null（如果不存在任何绑定参数）。</returns>
+      <param name="httpBinding">HTTP 终结点。</param>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.ReceiveTimeout">
+      <summary>获取或设置接收超时。</summary>
+      <returns>接收超时。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.SendTimeout">
+      <summary>获取或设置发送超时。</summary>
+      <returns>发送超时。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.TransferMode">
+      <summary>获取或设置传输模式。</summary>
+      <returns>
+        <see cref="T:System.ServiceModel.TransferMode" /> 枚举的枚举值之一。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.UserNamePasswordValidator">
+      <summary>获取或设置 <see cref="T:System.IdentityModel.Selectors.UserNamePasswordValidator" />，以便用其验证通过 HTTP 或 HTTPS 发送的用户名和密码。</summary>
+      <returns>
+        <see cref="T:System.IdentityModel.Selectors.UserNamePasswordValidator" />，用于验证通过 HTTP 或 HTTPS 发送的用户名和密码。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.HttpSelfHostConfiguration.X509CertificateValidator">
+      <summary>获取或设置 <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> 实例，以便将该实例用于验证通过 HTTPS 发送的客户端证书。</summary>
+      <returns>
+        <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> 实例，将用于验证客户端证书。</returns>
+    </member>
+    <member name="T:System.Web.Http.SelfHost.HttpSelfHostServer">
+      <summary> 直接侦听 HTTP 的 <see cref="T:System.Web.Http.HttpServer" /> 的实现。</summary>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.HttpSelfHostServer.#ctor(System.Web.Http.SelfHost.HttpSelfHostConfiguration)">
+      <summary> 初始化 <see cref="T:System.Web.Http.SelfHost.HttpSelfHostServer" /> 类的新实例。</summary>
+      <param name="configuration">配置。</param>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.HttpSelfHostServer.#ctor(System.Web.Http.SelfHost.HttpSelfHostConfiguration,System.Net.Http.HttpMessageHandler)">
+      <summary> 初始化 <see cref="T:System.Web.Http.SelfHost.HttpSelfHostServer" /> 类的新实例。</summary>
+      <param name="configuration">配置。</param>
+      <param name="dispatcher">调度程序。</param>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.HttpSelfHostServer.CloseAsync">
+      <summary> 关闭当前 <see cref="T:System.Web.Http.HttpServer" /> 实例。</summary>
+      <returns>一个表示异步 <see cref="T:System.Web.Http.HttpServer" /> 关闭操作的 <see cref="T:System.Threading.Tasks.Task" />。</returns>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.HttpSelfHostServer.OpenAsync">
+      <summary> 打开当前 <see cref="T:System.Web.Http.HttpServer" /> 实例。</summary>
+      <returns>一个表示异步 <see cref="T:System.Web.Http.HttpServer" /> 打开操作的 <see cref="T:System.Threading.Tasks.Task" />。一旦成功完成此任务，服务器将运行。</returns>
+    </member>
+    <member name="T:System.Web.Http.SelfHost.Channels.HttpBinding">
+      <summary> 与使用强类型 HTTP 请求和响应消息的 Web 服务的终结点一起使用的绑定。</summary>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.Channels.HttpBinding.#ctor">
+      <summary>初始化 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBinding" /> 类的新实例。</summary>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.Channels.HttpBinding.#ctor(System.Web.Http.SelfHost.Channels.HttpBindingSecurityMode)">
+      <summary>使用指定的安全模式初始化 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBinding" /> 类的新实例。</summary>
+      <param name="securityMode">一个 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBindingSecurityMode" /> 值，该值所指定的安全类型可用于配置使用 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBinding" /> 绑定的服务终结点。</param>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.ConfigureTransportBindingElement">
+      <summary> 获取或设置该委托，以便配置此绑定所创建的 <see cref="T:System.ServiceModel.Channels.HttpTransportBindingElement" />。</summary>
+      <returns>用于配置 <see cref="T:System.ServiceModel.Channels.HttpTransportBindingElement" /> 的委托。</returns>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.Channels.HttpBinding.CreateBindingElements">
+      <summary>创建一个包含绑定元素（属于当前绑定）的集合。</summary>
+      <returns>包含当前绑定对象中正确排序的绑定元素的集合。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.EnvelopeVersion">
+      <summary>获取 SOAP 版本，以便将该版本用于此绑定处理的消息。</summary>
+      <returns>与此绑定一起使用的 <see cref="T:System.ServiceModel.EnvelopeVersion" /> 的值。此值始终为 <see cref="F:System.ServiceModel.EnvelopeVersion.None" />。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.HostNameComparisonMode">
+      <summary>获取或设置一个值，该值指示在匹配 URI 时，是否使用主机名来访问服务。</summary>
+      <returns>
+        <see cref="T:System.ServiceModel.HostnameComparisonMode" /> 值。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.MaxBufferPoolSize">
+      <summary>获取或设置为缓冲区管理器分配的最大内存量，该缓冲区管理器管理使用此绑定的终结点所需的缓冲区。</summary>
+      <returns>配置了此绑定的终结点所使用的缓冲区池的最大大小（以字节为单位）。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.MaxBufferSize">
+      <summary>获取或设置分配给消息缓冲区管理器使用的最大内存量，这些缓冲区用于从通道接收消息。</summary>
+      <returns>最大缓冲区大小。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.MaxReceivedMessageSize">
+      <summary>获取或设置绑定可以处理的最大消息大小。</summary>
+      <returns>由绑定处理的消息的最大大小（以字节为单位）。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.Scheme">
+      <summary>获取使用此绑定配置的通道和侦听器的 URI 传输方案。</summary>
+      <returns>传输方案。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.Security">
+      <summary>获取或设置与此绑定一起使用的安全设置。</summary>
+      <returns>安全设置。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously">
+      <summary>获取一个值，该值指示是以同步方式还是以异步方式处理传入的请求。</summary>
+      <returns>如果以同步方式处理这些请求，则为 true；如果以异步方式处理这些请求，则为 false。</returns>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBinding.TransferMode">
+      <summary>获取或设置一个值，该值指示是发送缓冲的消息还是流式处理的消息。</summary>
+      <returns>
+        <see cref="T:System.ServiceModel.TransferMode" /> 值，用于指示是发送缓冲的消息还是流式处理的消息。</returns>
+    </member>
+    <member name="T:System.Web.Http.SelfHost.Channels.HttpBindingSecurity">
+      <summary> 指定可供已配置为使用 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBinding" /> 绑定的服务终结点使用的安全类型。</summary>
+    </member>
+    <member name="M:System.Web.Http.SelfHost.Channels.HttpBindingSecurity.#ctor">
+      <summary> 创建 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBindingSecurity" /> 类的新实例。</summary>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBindingSecurity.Mode">
+      <summary> 获取或设置已配置为使用 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBinding" /> 绑定的终结点所使用的安全模式。</summary>
+    </member>
+    <member name="P:System.Web.Http.SelfHost.Channels.HttpBindingSecurity.Transport">
+      <summary> 获取或设置一个对象，该对象包含 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBinding" /> 绑定的传输层安全设置。 </summary>
+    </member>
+    <member name="T:System.Web.Http.SelfHost.Channels.HttpBindingSecurityMode">
+      <summary> 定义可以用来配置使用 <see cref="T:System.Web.Http.SelfHost.Channels.HttpBinding" /> 的服务终结点的安全模式。</summary>
+    </member>
+    <member name="F:System.Web.Http.SelfHost.Channels.HttpBindingSecurityMode.None">
+      <summary> 指示没有对 HTTP 请求使用安全性。</summary>
+    </member>
+    <member name="F:System.Web.Http.SelfHost.Channels.HttpBindingSecurityMode.Transport">
+      <summary> 指示对 HTTP 请求使用了传输层安全性。</summary>
+    </member>
+    <member name="F:System.Web.Http.SelfHost.Channels.HttpBindingSecurityMode.TransportCredentialOnly">
+      <summary> 指示只提供基于 HTTP 的客户端身份验证。 </summary>
+    </member>
+  </members>
+</doc>

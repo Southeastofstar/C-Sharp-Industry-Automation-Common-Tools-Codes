@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1A856B1-2287-45EE-927C-89C21B6B5C41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PengDongNanTools</RootNamespace>
+    <AssemblyName>PengDongNanTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\PengDongNanTools.xml</DocumentationFile>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Automation.BDaq, Version=1.0.1.0, Culture=neutral, PublicKeyToken=463f5928d60183a0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Automation.BDaq.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\USEDLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http.SelfHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advantech\frmPCI1752.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advantech\frmPCI1752.Designer.cs">
+      <DependentUpon>frmPCI1752.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advantech\frmPCI1754.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advantech\frmPCI1754.Designer.cs">
+      <DependentUpon>frmPCI1754.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDP\CConstant.cs" />
+    <Compile Include="CommonFunction\CIniFile.cs" />
+    <Compile Include="CommonFunction\DataGridOperation.cs" />
+    <Compile Include="CommonFunction\Delay.cs" />
+    <Compile Include="CommonFunction\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonFunction\frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDP\CUdpClient.cs" />
+    <Compile Include="UDP\CUdpServer.cs" />
+    <Compile Include="DoubleBuffer\DoubleBufferDataGridView.cs" />
+    <Compile Include="DoubleBuffer\DoubleBufferListView.cs" />
+    <Compile Include="DoubleBuffer\DoubleBufferToolStrip.cs" />
+    <Compile Include="GoogolTech\gts.cs" />
+    <Compile Include="Epson\frmEpsonRemoteTCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Epson\frmEpsonRemoteTCP.Designer.cs">
+      <DependentUpon>frmEpsonRemoteTCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFunction\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonFunction\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAN\CANComm.cs" />
+    <Compile Include="CommonFunction\CommonFunction.cs" />
+    <Compile Include="Epson\EpsonRemoteTCP.cs" />
+    <Compile Include="CIP\EtherCATComm.cs" />
+    <Compile Include="CommonFunction\FTPOperation.cs" />
+    <Compile Include="GoogolTech\GoogolTechGTSCard.cs" />
+    <Compile Include="Keyence\KeyenceLJ-Laser.cs" />
+    <Compile Include="LeadShine\LeadShineDMC2410C.cs" />
+    <Compile Include="Database Operation\ListViewOperation.cs" />
+    <Compile Include="CommonFunction\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonFunction\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFunction\MarshalOperation.cs" />
+    <Compile Include="Database Operation\Access.cs" />
+    <Compile Include="CommonFunction\ExcelOperation.cs" />
+    <Compile Include="Database Operation\MySQL.cs" />
+    <Compile Include="Modbus\ModbusASCII.cs" />
+    <Compile Include="Modbus\ModbusRTU.cs" />
+    <Compile Include="Modbus\ModbusTCPIP.cs" />
+    <Compile Include="OPC\OPCClient.cs" />
+    <Compile Include="OPC\OPCServer.cs" />
+    <Compile Include="Advantech\PCI1752.cs" />
+    <Compile Include="Advantech\PCI1754.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RS232C Comm\RS232CForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RS232C Comm\RS232CForm.Designer.cs">
+      <DependentUpon>RS232CForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RS232C Comm\RS232CInterface.cs" />
+    <Compile Include="RS232C Comm\RS232Comm.cs" />
+    <Compile Include="TCPIP Comm\TCPAsyncClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPAsyncClientForm.Designer.cs">
+      <DependentUpon>TCPAsyncClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPAsyncServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPAsyncServerForm.Designer.cs">
+      <DependentUpon>TCPAsyncServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPClientForm.Designer.cs">
+      <DependentUpon>TCPClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPIPAsyncClient.cs" />
+    <Compile Include="TCPIP Comm\TCPIPAsyncServer.cs" />
+    <Compile Include="TCPIP Comm\TCPIPClient.cs" />
+    <Compile Include="TCPIP Comm\TCPIPServer.cs" />
+    <Compile Include="TCPIP Comm\TCPIPInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPIP Comm\TCPServerForm.Designer.cs">
+      <DependentUpon>TCPServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPIP Comm\SimpleTCPIPClient.cs" />
+    <Compile Include="TCPIP Comm\SimpleTCPIPServer.cs" />
+    <Compile Include="CommonFunction\XMLOperation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonFunction\字符串加解密.cs" />
+    <Compile Include="CommonFunction\文件流和序列化.cs" />
+    <Compile Include="CommonFunction\重要提示.cs" />
+    <EmbeddedResource Include="Epson\frmEpsonRemoteTCP.resx">
+      <DependentUpon>frmEpsonRemoteTCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonFunction\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonFunction\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advantech\frmPCI1752.resx">
+      <DependentUpon>frmPCI1752.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advantech\frmPCI1754.resx">
+      <DependentUpon>frmPCI1754.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonFunction\frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RS232C Comm\RS232CForm.resx">
+      <DependentUpon>RS232CForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPIP Comm\TCPAsyncClientForm.resx">
+      <DependentUpon>TCPAsyncClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPIP Comm\TCPAsyncServerForm.resx">
+      <DependentUpon>TCPAsyncServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPIP Comm\TCPClientForm.resx">
+      <DependentUpon>TCPClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPIP Comm\TCPServerForm.resx">
+      <DependentUpon>TCPServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\China flag 1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\China Flag 2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\China Flag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChineseFlag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLGUK.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NetworkAvailable.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoNetwork.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DISK12.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nethood.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurLanguage.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keyes_Large.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keys.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenOff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenOn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedOff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedOn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S3D.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Advantech\Automation.BDaq.dll" />
+    <Content Include="LeadShine\DMC2410.dll" />
+    <Content Include="GoogolTech\gts.dll" />
+    <Content Include="Resources\cab.ico" />
+    <Content Include="Resources\card.ico" />
+    <Content Include="Resources\EXIT.ico" />
+    <Content Include="Resources\Login.ico" />
+    <Content Include="Resources\Manual.ico" />
+    <Content Include="Resources\netfol.ico" />
+    <Content Include="Resources\Parameter.ico" />
+    <Content Include="Resources\Scanner.ico" />
+    <Content Include="Resources\SerialPort.ico" />
+    <Content Include="赞赏码.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

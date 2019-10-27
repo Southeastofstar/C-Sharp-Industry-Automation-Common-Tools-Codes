@@ -1,0 +1,8 @@
+F:\Project Data\VS2012 Projects\SMTPEmailSender\SMTPEmailSender\bin\Debug\SMTPEmailSender.dll
+F:\Project Data\VS2012 Projects\SMTPEmailSender\SMTPEmailSender\bin\Debug\SMTPEmailSender.pdb
+F:\Project Data\VS2012 Projects\SMTPEmailSender\SMTPEmailSender\obj\Debug\SMTPEmailSender.dll
+F:\Project Data\VS2012 Projects\SMTPEmailSender\SMTPEmailSender\obj\Debug\SMTPEmailSender.pdb
+F:\Project Data\VS2012 Projects\A-自用\SMTPEmailSender\SMTPEmailSender\bin\Debug\SMTPEmailSender.dll
+F:\Project Data\VS2012 Projects\A-自用\SMTPEmailSender\SMTPEmailSender\bin\Debug\SMTPEmailSender.pdb
+F:\Project Data\VS2012 Projects\A-自用\SMTPEmailSender\SMTPEmailSender\obj\Debug\SMTPEmailSender.dll
+F:\Project Data\VS2012 Projects\A-自用\SMTPEmailSender\SMTPEmailSender\obj\Debug\SMTPEmailSender.pdb
